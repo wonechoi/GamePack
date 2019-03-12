@@ -1,0 +1,108 @@
+body {
+	background-color: black;
+}
+.jumbotron {
+	padding-top: 10px;
+	padding-bottom: 8px;
+	margin-bottom: 0px;
+	background-color: #006bb3;
+	color: white;
+}
+.jumbotron h1 {
+	font-size: 85px;
+	text-align: center;
+}
+.jumbotron p {
+	margin-bottom: 0px;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+.lead {
+	font-size: 25px;
+	font-weight: 500px;
+	line-height: 1.4;
+}
+.nav {
+	background-color: white;
+}
+.nav > li > a {
+	color:#006bb3;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.nav > #home {
+	font-size: 20px;
+	color: #006bb3;
+}
+.nav > #empty {
+	margin-left: 70px;
+	margin-right: 70px;
+}
+.container-fluid {
+	padding-left: 7.5%;
+	padding-right: 7.5%;
+	margin-top: 1%;
+}
+.container-fluid .row {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+#hangManCanvas {
+	width:100%;
+	height:470px;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	background-color: white;
+	border:2px solid white; 
+}
+#hangManBox {
+	background-color: white;
+	height:500px;
+	margin-right: 7%;
+	border:3px solid;
+}
+#guessingBox {
+	background-color: white;
+}
+.clickedMenu, .nav > li > a:hover{
+	background-color:#006bb3;
+	color:white;
+}
+#wordUl > li {
+	display: inline-block;
+	font-size: 50px;
+	margin-top: 70px;
+	margin-left: 15px;
+	margin-right: 15px;
+	text-align: center;
+}
+#guessingWordDiv {
+	height: 45%;
+	text-align:center;
+}
+.alphabetsUl {
+	text-align: center;
+}
+.alphabetsUl > li {
+	display: inline-block;
+	width:55px;
+	font-size: 40px;
+	text-align: center;
+	margin: 4px;
+	border: 1.5px solid black;
+	border-radius: 7px;
+	background-color: aliceblue;
+}
+#clickedAlphabets {
+	display:none;
+}
+.alphabetsUl > li:hover{
+	cursor:pointer;
+}
+#message {
+	color:crimson;
+}

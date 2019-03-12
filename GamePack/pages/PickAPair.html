@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		    <!--
+            Author: Hyewon Choi
+            Date created: July 31, 2018
+            Version: 0.1
+            Copyright: 1.0
+            Purpose: Playing Pick A Pair game
+            Description: It is a game requires players to match same elements. 
+            							It shows whole board for 10 secs at first. 
+        -->
+		<title>Memory Game</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/PickAPair.css">
+	</head>
+	<body>
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<p class="lead">THE GREAT</p>
+				<h1> Pick-A-Pair</h1>
+			</div>
+		</div>
+		<ul class="nav justify-content-center">
+			<li class="nav-item" id="home">
+				<a href="../index.html"><i class="fas fa-home"></i></a>
+			</li>
+			<li id="empty">
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" href="#" id="newGames" onclick="startNewGame()">NEW Game</a>
+			</li>
+			<li id="empty">
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#" id="message">Press NEW Game!</a>
+			</li>
+		</ul>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-2 gameBoard col-md-2" id="board00" onclick="clickBoard(0,0)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board01" onclick="clickBoard(0,1)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board02" onclick="clickBoard(0,2)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board03" onclick="clickBoard(0,3)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board04" onclick="clickBoard(0,4)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board05" onclick="clickBoard(0,5)"> </div>
+			</div>
+			<div class="row">
+				<div class="col-lg-2 gameBoard col-md-2" id="board10" onclick="clickBoard(1,0)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board11" onclick="clickBoard(1,1)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board12" onclick="clickBoard(1,2)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board13" onclick="clickBoard(1,3)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board14" onclick="clickBoard(1,4)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board15" onclick="clickBoard(1,5)"> </div>
+			</div>
+			<div class="row">
+				<div class="col-lg-2 gameBoard col-md-2" id="board20" onclick="clickBoard(2,0)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board21" onclick="clickBoard(2,1)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board22" onclick="clickBoard(2,2)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board23" onclick="clickBoard(2,3)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board24" onclick="clickBoard(2,4)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board25" onclick="clickBoard(2,5)"> </div>
+			</div>	
+			<div class="row">
+				<div class="col-lg-2 gameBoard col-md-2" id="board30" onclick="clickBoard(3,0)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board31" onclick="clickBoard(3,1)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board32" onclick="clickBoard(3,2)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board33" onclick="clickBoard(3,3)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board34" onclick="clickBoard(3,4)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board35" onclick="clickBoard(3,5)"> </div>
+			</div>
+			<div class="row">
+				<div class="col-lg-2 gameBoard col-md-2" id="board40" onclick="clickBoard(4,0)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board41" onclick="clickBoard(4,1)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board42" onclick="clickBoard(4,2)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board43" onclick="clickBoard(4,3)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board44" onclick="clickBoard(4,4)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board45" onclick="clickBoard(4,5)"> </div>
+			</div>
+			<div class="row">
+				<div class="col-lg-2 gameBoard col-md-2" id="board50" onclick="clickBoard(5,0)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board51" onclick="clickBoard(5,1)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board52" onclick="clickBoard(5,2)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board53" onclick="clickBoard(5,3)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board54" onclick="clickBoard(5,4)"> </div>
+				<div class="col-lg-2 gameBoard col-md-2" id="board55" onclick="clickBoard(5,5)"> </div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../js/PickAPair.js">
+		</script>
+	</body>
+</html>

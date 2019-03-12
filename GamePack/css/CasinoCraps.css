@@ -1,0 +1,117 @@
+body {
+	background-color: black;
+}
+.jumbotron {
+	padding-top: 10px;
+	padding-bottom: 8px;
+	margin-bottom: 0px;
+	background-color: #006bb3;
+	color: white;
+}
+.jumbotron h1 {
+	font-size: 85px;
+	text-align: center;
+}
+.jumbotron p {
+	margin-bottom: 0px;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+.lead {
+	font-size: 25px;
+	font-weight: 500px;
+	line-height: 1.4;
+}
+.nav {
+	background-color: white;
+	margin-bottom: 10px;
+}
+.nav > li > a {
+	color:#006bb3;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.nav > #home {
+	font-size: 20px;
+	color: #006bb3;
+}
+.nav > #empty {
+	margin-left: 70px;
+	margin-right: 70px;
+}
+.container-fluid {
+	padding-left: 28%;
+	padding-right: 16%;
+}
+.container-fluid .row {
+	padding-left: 3%;
+	padding-right: 3%;
+}
+.dicesBox {
+	background-color: white;
+	width: 25%;
+	height: 140px;
+	margin: 3%;
+	margin-top: 4%;
+	border-radius: 15px;
+}
+.dices {
+	padding-top: 1px;
+	padding-left: 9px;
+	padding-bottom: 3px;
+	line-height: 0px;
+	font-size: 138px;
+}
+#equal {
+	width:50px;
+	background-color: black;
+	margin-left: 1%;
+	margin-right: 1%;
+	color: white;
+	text-align: center;
+	font-size: 80px;
+	font-weight: 500;
+}
+#sumOfDices {
+	padding-top: 7.2%;
+	padding-left: 2.2%;
+	line-height: 0px;
+	text-align: center;
+	font-size: 135px;
+	font-weight: 500;
+}
+#sumOfDices10n12 {
+	padding-top: 7.2%;
+	padding-left: 0.8%;
+	line-height: 0px;
+	text-align: center;
+	font-size: 135px;
+	font-weight: 500;
+}
+#messageBox {
+	height: auto;
+	background-color: white;
+	margin-left: 1.7%;
+	border-radius: 25px;
+	border: 10px solid black;
+	padding-top: 20px;
+	padding-left: 15px;
+	line-height: 7px;
+	font-size: 18px;
+	font-family: monospace;
+}
+
+.clickedMenu, .nav > li > a:hover{
+	background-color:#006bb3;
+	color:white;
+}
+.gameBoard:hover {
+	cursor:pointer;
+}
+#rollDices {
+	color:crimson;
+}

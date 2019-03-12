@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Color Game</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<link rel="stylesheet" href="ColorGame.css"></link>
+	</head>
+	<body onload="onLoad();">
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<p class="lead">THE GREAT</p>
+				<h1> RGB&#40;<span class="rgb">0</span>,<span class="rgb">0</span>,<span class="rgb">0</span>&#41;</h1>
+				<p class="lead">GUESSING GAME</p>
+			</div>
+		</div>
+		<ul class="nav justify-content-center">
+			<li class="nav-item">
+				<a class="nav-link active" href="#" id="newColors">NEW COLORS</a>
+			</li>
+			<li id="empty">
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#" id="EASY">EASY</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#" id="HARD">HARD</a>
+			</li>
+		</ul>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-3 colorBox col-md-12">
+				</div>
+				<div class="col-lg-3 colorBox col-md-12">
+				</div>
+				<div class="col-lg-3 colorBox col-md-12">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 colorBox col-md-12">
+				</div>
+				<div class="col-lg-3 colorBox col-md-12">
+				</div>
+				<div class="col-lg-3 colorBox col-md-12">
+				</div>
+			</div>			
+		</div>
+		<script type="text/javascript" src="ColorGame.js">
+		</script>
+	</body>
+</html>

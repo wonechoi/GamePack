@@ -1,0 +1,73 @@
+body {
+	background-color: black;
+}
+.jumbotron {
+	padding-top: 10px;
+	padding-bottom: 8px;
+	margin-bottom: 0px;
+	background-color: #006bb3;
+	color: white;
+}
+.jumbotron h1 {
+	font-size: 85px;
+	text-align: center;
+}
+.jumbotron p {
+	margin-bottom: 0px;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+.lead {
+	font-size: 25px;
+	font-weight: 500px;
+	line-height: 1.4;
+}
+.nav {
+	background-color: white;
+	margin-bottom: 10px;
+}
+.nav > li > a {
+	color:#006bb3;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.nav > #home {
+	font-size: 20px;
+	color: #006bb3;
+}
+.nav > #empty {
+	margin-left: 70px;
+	margin-right: 70px;
+}
+.container-fluid {
+	padding-left: 34%;
+	padding-right: 34%;	
+}
+.container-fluid .row {
+}
+.gameBoard {
+	background-color: white;
+	height: 86px;
+	border: 1px solid;
+	padding: auto;
+	padding-top: 1%;
+	border-radius: 13px;
+	font-size: 50px;
+	font-family: "Arial Black";
+	text-align: center;				
+}
+
+.clickedMenu, .nav > li > a:hover{
+	background-color:#006bb3;
+	color:white;
+}
+.gameBoard:hover {
+	cursor:pointer;
+}
+#message {
+	color:crimson;
+}

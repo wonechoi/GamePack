@@ -1,0 +1,61 @@
+body {
+	background-color: black;
+}
+.jumbotron {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 0px;
+	background-color: #006bb3;
+	color: white;
+}
+.jumbotron h1 {
+	font-size: 80px;
+	text-align: center;
+}
+.jumbotron p {
+	margin-bottom: 0px;
+	text-align: center;
+	font-weight: bold;
+}
+.lead {
+	font-size: 25px;
+	font-weight: 500px;
+	line-height: 1.4;
+}
+.nav {
+	background-color: white;
+}
+.nav > li > a {
+	color:#006bb3;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.nav > #empty {
+	margin-left: 70px;
+	margin-right: 70px;
+}
+.container-fluid {
+	padding-left: 27%;
+	padding-right: 27%;
+}
+.container-fluid .row {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.colorBox {
+	background-color:black;
+	height:150px;
+	padding-right: 23.5%;
+	margin:20px;
+	border-radius: 15px;
+}
+.clickedMenu, .nav > li > a:hover{
+	background-color:#006bb3;
+	color:white;
+}
+.colorBox:hover {
+	cursor:pointer;
+}
